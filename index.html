@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+
+    <link rel="shortcut icon" href="img/my logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bilanas Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img class="logo" src="img/my logo.png" alt="" /></a>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a href="#About_Me">About Me</a></li>
+        <li><a href="#My_Services">My Services</a></li>
+        <li><a href="#My_Projects">My Projects</a></li>
+        <li><a href="#Contact_Me">Contact Me</a></li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+          <a
+            href="https://www.facebook.com/giorgi.bilanishvili.79"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/giorgi-bilanishvili-756a6927b/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/bilana1990" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </span>
+      </ul>
+    </header>
+    <!-- About Me section -->
+    <section class="About_Me" id="About_Me">
+      <h1>I am <span>Giorgi Bilanishvili</span>, Certified web developer.</h1>
+      <img class="bilana" src="img/bilana.jpg" alt="" />
+      <a
+        href="https://novoresume.com/editor/resume/d4ae5e10-d322-11ee-bd4c-cf74420107e9"
+        target="_blank"
+        >Download CV</a
+      >
+      <p>
+        I am a certified and experienced web developer, I took the basic
+        programming course at Skillwill Academy in 2023. I have gained work
+        experience by working on private projects and freelance platforms. My
+        skills: Html,Css,Javascript,Wordpress,Php,Git hub.
+      </p>
+    </section>
+
+    <!-- My Services section -->
+    <section class="My_Services" id="My_Services">
+      <h2>My Services</h2>
+      <div class="all_services">
+        <div class="service_1">
+          <h3>Wordpress Development</h3>
+          <p>
+            I can create a website of any level using both free and paid plugins
+            and page builders on the very popular CMS Wordpress platform.
+          </p>
+        </div>
+
+        <div class="service_1">
+          <h3>Frontend Development</h3>
+          <p>
+            We offer the development of the frontend side of the website using
+            Html, Css and Javascript.
+          </p>
+        </div>
+
+        <div class="service_1">
+          <h3>Backend Development</h3>
+          <p>
+            We offer website back-end development using Php and My Sql
+            databases.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Projects section -->
+    <section class="My_Projects" id="My_Projects">
+      <h3>My Projects</h3>
+      <div class="all_projects">
+        <div class="project_1">
+          <a href="#">
+            <h4>Project Name</h4>
+            <img src="img/project.webp" alt="" />
+          </a>
+        </div>
+
+        <div class="project_1">
+          <a href="#">
+            <h4>Project Name</h4>
+            <img src="img/project.webp" alt="" />
+          </a>
+        </div>
+
+        <div class="project_1">
+          <a href="#">
+            <h4>Project Name</h4>
+            <img src="img/project.webp" alt="" />
+          </a>
+        </div>
+
+        <div class="project_1">
+          <a href="#">
+            <h4>Project Name</h4>
+            <img src="img/project.webp" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section -->
+    <section class="Contact_Me" id="Contact_Me">
+      <span class="icons">
+        <a
+          href="https://www.facebook.com/giorgi.bilanishvili.79"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a
+          href="https://www.linkedin.com/in/giorgi-bilanishvili-756a6927b/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/bilana1990" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </span>
+      <div class="contact">
+        <a href="tel:+995598699007">598 699 007 |</a>
+        <a href="mailto:giobilana@gmail.com">giobilana@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- burger menu javascript -->
+    <script>
+      const mainMenu = document.querySelector(".mainMenu");
+      const closeMenu = document.querySelector(".closeMenu");
+      const openMenu = document.querySelector(".openMenu");
+
+      openMenu.addEventListener("click", show);
+      closeMenu.addEventListener("click", close);
+
+      function show() {
+        mainMenu.style.display = "flex";
+        mainMenu.style.gap = "20px";
+        mainMenu.style.top = "0";
+      }
+      function close() {
+        mainMenu.style.top = "-100%";
+      }
+    </script>
+  </body>
+</html>

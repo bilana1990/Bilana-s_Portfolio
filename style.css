@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(172, 165, 165);
+}
+a {
+  color: white;
+}
+header {
+  background-color: black;
+}
+header .logo {
+  width: 100px;
+  margin-left: 8%;
+}
+
+header .mainMenu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  transition: top 1s ease;
+  display: none;
+}
+header .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+header .openMenu {
+  display: block;
+  color: white;
+  margin-left: 80%;
+  margin-top: -25px;
+  padding-bottom: 20px;
+}
+header .icons {
+  color: white;
+  font-size: 30px;
+}
+.mainMenu li a {
+  font-size: 30px;
+}
+
+/* About_Me section */
+.About_Me h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.About_Me span {
+  color: red;
+  font-weight: bold;
+}
+.About_Me .bilana {
+  width: 300px;
+  margin-left: 10%;
+  border-radius: 30px;
+}
+.About_Me a {
+  color: black;
+  border: 2px solid red;
+  padding: 10px 70px;
+  border-radius: 50px;
+  background-color: rgb(223, 118, 118);
+  position: absolute;
+  top: 450px;
+  left: 20%;
+}
+.About_Me p {
+  margin-top: 100px;
+  width: 300px;
+  text-align: center;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+/* My_Services section */
+.My_Services {
+  background-color: black;
+  min-height: 500px;
+  margin-top: 50px;
+}
+.My_Services h2 {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+.My_Services .all_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+.My_Services .service_1 {
+  color: rgb(0, 0, 0);
+  width: 300px;
+  min-height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 20px 40px;
+}
+.My_Services .service_1 h3 {
+  color: red;
+  font-size: 19px;
+}
+.My_Services .service_1 p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* My_Projects section */
+.My_Projects {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.My_Projects h3 {
+  font-size: 30px;
+}
+.all_projects {
+  margin-top: 30px;
+}
+.all_projects .project_1 img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+.all_projects .project_1 a {
+  color: black;
+}
+
+/* Contact_Me section */
+.Contact_Me {
+  height: 100px;
+  background-color: black;
+}
+.Contact_Me span {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.Contact_Me .contact {
+  padding-left: 20%;
+}
+
+/* 458px responsive */
+@media (min-width: 458px) {
+  .About_Me .bilana {
+    margin-left: 20%;
+  }
+  .About_Me a {
+    margin-left: 8%;
+  }
+  .About_Me p {
+    width: 380px;
+  }
+}
+/* 600px responsive */
+@media (min-width: 600px) {
+  .About_Me p {
+    width: 480px;
+  }
+  .About_Me a {
+    margin-left: 10%;
+  }
+  .About_Me .bilana {
+    margin-left: 25%;
+  }
+  .Contact_Me .contact {
+    padding-left: 30%;
+  }
+  .all_projects {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* 700px responsive */
+@media (min-width: 700px) {
+  header .mainMenu {
+    height: 70px;
+    /* margin-left: 20%; */
+    margin-top: -15px;
+
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+    visibility: visible;
+  }
+  header .mainMenu li a {
+    font-size: 10px;
+  }
+  header .mainMenu .icons {
+    visibility: hidden;
+  }
+  .closeMenu {
+    visibility: hidden;
+  }
+  header .openMenu {
+    visibility: hidden;
+  }
+  .About_Me .bilana {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  .About_Me p {
+    width: 40%;
+    position: absolute;
+    top: 50px;
+    left: 40%;
+  }
+  .About_Me a {
+    margin-left: 35%;
+    margin-top: -50px;
+  }
+  .Contact_Me .contact {
+    padding-left: 32%;
+  }
+}
+
+/* 900px responsive */
+@media (min-width: 900px) {
+  header .mainMenu li a {
+    font-size: 15px;
+  }
+  .My_Services .all_services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+  .Contact_Me .contact {
+    padding-left: 38%;
+  }
+}
+
+/* 1024px responsive */
+@media (min-width: 1024px) {
+  .About_Me .bilana {
+    margin-left: 5%;
+    width: 400px;
+    margin-top: 20px;
+  }
+  .My_Services .all_services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+  .My_Services {
+    background-color: black;
+    min-height: 300px;
+    margin-top: 50px;
+  }
+
+  .About_Me h1 {
+    margin-top: 20px;
+    margin-left: 50%;
+    margin-top: 50px;
+    position: absolute;
+    font-size: 40px;
+  }
+  .About_Me p {
+    width: 40%;
+    position: absolute;
+    top: 120px;
+    left: 45%;
+    font-size: 20px;
+  }
+  .About_Me a {
+    margin-left: 45%;
+    margin-top: 0px;
+  }
+}
+
+/* 1280 px responsive */
+@media (min-width: 1280px) {
+  header .logo {
+    width: 200px;
+    margin-left: 8%;
+  }
+  header .mainMenu li a {
+    font-size: 30px;
+  }
+  header .mainMenu {
+    margin-top: 10px;
+  }
+  .About_Me p {
+    width: 40%;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+    font-size: 20px;
+  }
+  .About_Me .bilana {
+    margin-left: 10%;
+    width: 450px;
+    margin-top: 20px;
+  }
+  .My_Services .service_1 {
+    color: rgb(0, 0, 0);
+    width: 400px;
+    min-height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 20px 40px;
+  }
+  .My_Services h2 {
+    font-size: 40px;
+  }
+  .My_Projects h3 {
+    font-size: 40px;
+  }
+  .all_projects .project_1 img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .all_projects h4 {
+    font-size: 25px;
+  }
+  .Contact_Me .contact {
+    padding-left: 35%;
+    font-size: 30px;
+  }
+  .Contact_Me span {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .Contact_Me {
+    height: 120px;
+    background-color: black;
+  }
+}
