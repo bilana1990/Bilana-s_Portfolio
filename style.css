@@ -321,8 +321,17 @@ header .icons {
   header .mainMenu li a {
     font-size: 30px;
   }
+  header .mainMenu li a:hover {
+    color: red;
+    transition: 0.2s;
+  }
   header .mainMenu {
     margin-top: 10px;
+  }
+  .About_Me a:hover {
+    background-color: white;
+    font-size: 20px;
+    transition: 0.3s;
   }
   .About_Me p {
     width: 40%;
